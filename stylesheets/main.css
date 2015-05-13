@@ -21,13 +21,15 @@ section {
   margin-right: auto;
   margin-top: 30px;
   height: 260px;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: left; }
   .columns::after {
     clear: both;
     content: "";
     display: table; }
 
 #column1 {
+  margin-right: 5px;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -56,26 +58,27 @@ section {
     margin-right: 0; }
 
 .columns h2 {
-  font-size: 18px; }
+  font-size: 20px; }
 
-.ReadMore {
-  width: auto;
-  text-align: center;
-  color: red;
-  text-decoration: underline;
-  padding-bottom: 5px; }
-
-.skaters {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .skaters::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.skaters img {
-  border: 3px solid white; }
+.date {
+  font-size: 10px;
+  font-color: gray; }
+  .date .readmore {
+    width: auto;
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    padding-bottom: 5px; }
+  .date .skaters {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .date .skaters::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .date .skaters img {
+    border: 3px solid white; }
 
 .skaters p {
   font-size: 42px;
