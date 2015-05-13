@@ -1,0 +1,99 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+$tablet: new-breakpoint(max-width 840px);
+
+$font: "Arial", sans-serif;
+
+section {
+  @include outer-container(1130px);
+}
+
+
+.columns {
+  @include outer-container;
+margin-top: 30px;
+height: 260px;
+overflow: hidden;
+
+
+
+}
+
+#column1 {
+@include span-columns(3);
+@include shift(2);
+background-color: white;
+
+
+}
+#column2 {
+  @include span-columns(3);
+
+  background-color: white;
+
+}
+#column3 {
+  @include span-columns(3);
+
+  background-color: white;
+}
+
+.columns h2 {
+  font-size: 18px;
+}
+
+.ReadMore {
+  width: auto;
+text-align:center;
+  color: red;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+.skaters {
+
+  @include outer-container;
+}
+
+
+.skaters img {
+  border: 3px solid white;
+}
+.skaters p {
+  font-size: 42px;
+  color: white;
+}
+
+#lance p{
+top: 12px;
+right: 30px;
+
+}
+
+#lance img {
+  position: relative;
+  @include span-columns(4);
+  @include shift(2);
+}
+
+#rodney img {
+  @include span-columns(4);
+@include omega();
+}
+
+
+
+.headerimage img {
+  margin-top: 135px;
+  border: 10px solid white;
+height: 360px;
+  @include span-columns(9);
+  @include shift(2);
+
+}
+
+.headerimage::after {
+  linear-gradient:(45deg, transparent 45%, #919195 50%, transparent 55%, transparent 100%);
+   linear-gradient:(-45deg, transparent 45%, #919195 50%, transparent 55%, transparent 100%);
+}

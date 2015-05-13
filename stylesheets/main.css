@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+section {
+  max-width: 1130px;
+  margin-left: auto;
+  margin-right: auto; }
+  section::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.columns {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 260px;
+  overflow: hidden; }
+  .columns::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#column1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 17.05961%;
+  background-color: white; }
+  #column1:last-child {
+    margin-right: 0; }
+
+#column2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: white; }
+  #column2:last-child {
+    margin-right: 0; }
+
+#column3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: white; }
+  #column3:last-child {
+    margin-right: 0; }
+
+.columns h2 {
+  font-size: 18px; }
+
+.ReadMore {
+  width: auto;
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+  padding-bottom: 5px; }
+
+.skaters {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .skaters::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.skaters img {
+  border: 3px solid white; }
+
+.skaters p {
+  font-size: 42px;
+  color: white; }
+
+#lance p {
+  top: 12px;
+  right: 30px; }
+
+#lance img {
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 17.05961%; }
+  #lance img:last-child {
+    margin-right: 0; }
+
+#rodney img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-right: 0; }
+  #rodney img:last-child {
+    margin-right: 0; }
+
+.headerimage img {
+  margin-top: 135px;
+  border: 10px solid white;
+  height: 360px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-left: 17.05961%; }
+  .headerimage img:last-child {
+    margin-right: 0; }
+
+.headerimage::after {
+  linear-gradient: 45deg, transparent 45%, #919195 50%, transparent 55%, transparent 100%;
+  linear-gradient: -45deg, transparent 45%, #919195 50%, transparent 55%, transparent 100%; }
