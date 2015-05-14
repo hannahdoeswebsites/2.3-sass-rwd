@@ -9,93 +9,6 @@ section {
   @include outer-container(1130px);
 }
 
-.overlayimage img {
-  max-height: 500px;
-  max-width: 300px;
-}
-
-.columns {
-  @include outer-container;
-margin-top: 30px;
-height: 260px;
-overflow: hidden;
-text-align: left;
-
-}
-
-#column1 {
-  margin-right: 5px;
-@include span-columns(3);
-@include shift(2);
-background-color: white;
-
-
-}
-#column2 {
-  @include span-columns(3);
-
-  background-color: white;
-
-}
-#column3 {
-  @include span-columns(3);
-
-  background-color: white;
-}
-
-.columns h2 {
-  font-size: 20px;
-}
-
-.date {
-  font-size: 10px;
-  font-color: gray;
-}
-
-.readmore {
-  width: auto;
-text-align:center;
-  color: red;
-  text-decoration: underline;
-  padding-bottom: 5px;
-}
-
-.skaters {
-
-  @include outer-container;
-}
-
-
-.skaters img {
-  border: 3px solid white;
-}
-
-
-.skaters p {
-  font-size: 42px;
-  color: white;
-}
-
-
-#lance p{
-top: 12px;
-right: 30px;
-
-}
-
-#lance img {
-  position: relative;
-  @include span-columns(4);
-  @include shift(2);
-}
-
-#rodney img {
-  @include span-columns(4);
-@include omega();
-}
-
-
-
 .headerimage img {
   margin-top: 135px;
   border: 10px solid white;
@@ -108,4 +21,165 @@ height: 360px;
 .headerimage::after {
   linear-gradient:(45deg, transparent 45%, #919195 50%, transparent 55%, transparent 100%);
    linear-gradient:(-45deg, transparent 45%, #919195 50%, transparent 55%, transparent 100%);
+}
+
+.overlayimage img {
+  max-height: 500px;
+  max-width: 300px;
+}
+
+.columns {
+  @include outer-container;
+margin-top: 30px;
+height: 243px;
+overflow: hidden;
+text-align: left;
+margin-bottom: 15px;
+text-align: center;
+}
+
+#column1 {
+
+@include span-columns(3);
+@include shift(2);
+background-color: white;
+
+
+
+
+}
+#column2 {
+  @include span-columns(3);
+height: 242px;
+  background-color: white;
+
+}
+#column3 {
+  @include span-columns(3);
+height: 242px;
+  background-color: white;
+}
+
+#column3 p {
+  padding-top: 5px;
+}
+
+.columns h2 {
+  font-size: 20px;
+}
+
+.date {
+  font-size: 12px;
+  font-color: gray;
+}
+
+.readmore {
+  width: auto;
+text-align:center;
+  color: red;
+
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.skaters {
+
+  @include outer-container;
+  max-height: 400px;
+
+}
+
+
+.skaters img {
+  border: 3px solid white;
+}
+
+
+.skaters p {
+  font-size: 45px;
+  color: white;
+  @include span-columns(8);
+
+
+}
+
+
+
+
+#lance img {
+  position: absolute;
+  @include span-columns(3);
+  @include shift(2);
+}
+
+#lance p{
+  position: relative;
+left: 20px;
+max-width: 200px;
+@include shift(2);
+text-align:center;
+margin-top: 10px;
+margin-bottom: 0;
+
+}
+
+#rodney img {
+  @include span-columns(3);
+margin-left: 45px;
+
+}
+
+#rodney p {
+  position: absolute;
+margin-top: 10px;
+  left: 460px;
+  max-width: 200px;
+}
+
+#tommy img {
+  @include span-columns(3);
+  height: 400px;
+  overflow: hidden;
+}
+
+
+#tommy p {
+  position: absolute;
+margin-top: 150px;
+  left: 700px;
+  max-width: 200px;
+}
+
+#steve {
+
+}
+
+#steve p {
+  position: absolute;
+  max-width: 200px;
+
+}
+
+#steve img {
+  @include span-columns(4);
+  @include shift(2);
+
+}
+
+
+.skateboards {
+  @include outer-container;
+  @include span-columns(8);
+  @include shift (2);
+  background-color: white;
+  width: 80%;
+  padding-left: 17px;
+
+  margin-top: 15px;
+}
+.skateboards img {
+  padding-left: 10px;
+  padding-right: 10px;
+
+
 }
